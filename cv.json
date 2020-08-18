@@ -1,0 +1,17 @@
+{
+    "pageWidth": 596.28,
+    "pageHeight": 841.89,
+    "margin": {
+        "top": 25,
+        "bottom": 25,
+        "left": 20,
+        "right": 20
+    },
+    "textSize": 11,
+    "titleTextSize": 16,
+    "baseX": 60,
+    "titleWidth": 200,
+    "sectionIdent": 25,
+    "subSectionIdent": 16,
+    "jobIdent": 20
+}
