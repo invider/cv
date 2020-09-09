@@ -54,7 +54,7 @@ let cv = {
         ls: [],
     },
 }
-let cvText = fs.readFileSync('cv.txt', 'utf8')
+let cvText = fs.readFileSync('cv.md', 'utf8')
 let cvl = cvText.split(/\r?\n/);
 
 let state = 0
