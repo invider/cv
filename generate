@@ -1,2 +1,3 @@
 #!/bin/sh
 node frame.js
+mv cv.pdf 'Igor Khotin.CV.pdf'

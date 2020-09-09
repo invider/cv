@@ -52,7 +52,7 @@ Websites, educational software, geodesic system development
 * *Frameworks and Technologies:* _Spring, Spring Boot, Hibernate, NodeJS, Express, Electron, Cordova, Play, Scalatra, Grails, WebGL_ 
 * *Databases:* _Cassandra, Couchbase, MySQL, PostgreSQL_
 * *Data Processing:* _Spark, Hadoop, HDFS, Kafka_
-* *Tools:* _vim, git, mercurial, gradle, sbt, gulp_ 
+* *Tools:* _vim, git, mercurial, gradle, sbt, gulp, maven, ant, make_ 
 * *Clouds:* _AWS, Alibaba Cloud_
 * *OS/Containers:* _Linux, Docker, Kubernetes_
 
@@ -64,7 +64,11 @@ Websites, educational software, geodesic system development
 
 * Experience with *high-load*, scalable, and distributed systems. Understanding of *Big/Fast Data* and *NoSQL* technologies and use-cases for their successful application.
 
+* Interested in music, education, game development and gamification, astronomy, science fiction, futurism, and space exploration.
+
 * _Fluent English_
+
+
 # Education:
 Master's Degree in Physics, Physics and Mathematics Faculty,
 National Technical University of Ukraine "Kyiv Polytechnic Institute"
