@@ -57,14 +57,23 @@ let cv = {
 let cvText = fs.readFileSync('cv.md', 'utf8')
 let cvl = cvText.split(/\r?\n/);
 
+function matchKey(l) {
+    const i = l.indexOf(':')
+    if (i > 0) {
+        const lk = l.substring(0, i).trim()
+        const key = lk.substring(0, 1).toLowerCase() + lk.substring(1)
+        const val = l.substring(i + 1).trim()
+        //console.log('KEY ' + key + ': [' + val + ']')
+        cv[key] = val
+    }
+}
+
 let state = 0
 cvl.forEach(l => {
     l = trim(l)
 
     if (l.startsWith('===')) {
         cv.name = cutAll(l, '===')
-    } else if (l.startsWith('Title:')) {
-        cv.title = cut(l, 'Title:')
     } else if (l.startsWith('# Summary:')) {
         state = 1
     } else if (l.startsWith('# Experience:')) {
@@ -79,6 +88,9 @@ cvl.forEach(l => {
         // ignoring the comment line
     } else {
         switch (state) {
+        case 0:
+            matchKey(l)
+            break
         case 1:
             cv.summary.ls.push(l)
             break;
@@ -261,7 +273,7 @@ doc.on('pageAdded', () => {
 })
 
 // photo
-doc.image('img/punk-dude.v2.big.png', 25, 15, {
+doc.image('img/profile.png', 25, 20, {
     width: 40,
     height: 75,
     })
@@ -274,19 +286,32 @@ doc.image('img/luxoft-tagline.jpg', cg.pageWidth-20-250, 20, {
     })
 */
 
-// name
 doc
+    // name
     .font('main')
     .fontSize(24)
     .fillColor("#808080")
-    .text(cv.name, 80, 40, {
+    .text(cv.name, 80, 35, {
         align: 'left',
     })
 
+    // title
     .fontSize(16)
     .fillColor("orange")
-    .text(cv.title, 80, 75, {
+    .text(cv.title, 80, 70, {
         align: 'left',
+    })
+
+    // location & contacts
+    .fontSize(cg.textSize)
+    .fillColor("#808080")
+    .text(cv.location , 80, 80, {
+        align: 'right',
+    })
+
+    // contacts
+    .text('  <' + cv.contacts + '>', 80, 93, {
+        align: 'right',
     })
 
 // summary

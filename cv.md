@@ -1,6 +1,10 @@
 === Igor Khotin === 
 
 Title: Solution Architect
+Location: Kiev, Ukraine
+Contacts: i@invadium.com
+GitHub: https://github.com/invider
+HomePage: http://ikhotin.com
 
 # Summary:
 • 20 years of experience in software development, a wide area of expertise
