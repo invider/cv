@@ -1,0 +1,22 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "markdown CV to pdf generator",
+  "main": "frame.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/invider/cv.git"
+  },
+  "dependencies": {
+    "pdfkit": "^0.11.0"
+  },
+  "author": "Igor Khotin <khotin@gmx.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/invider/cv/issues"
+  },
+  "homepage": "https://github.com/invider/cv#readme"
+}
