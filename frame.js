@@ -4,10 +4,11 @@ const fs = require('fs');
 let PDFDocument = require("pdfkit");
 
 let color = {
-    blue: "#233C75",
-    red: "#e02010",
+    blue:   "#233C75",
+    red:    "#e02010",
     orange: "#c55614",
     yellow: "#f9e337",
+    grey:   "#808080",
 }
 
 let trim = function(txt, shift) {
@@ -290,7 +291,7 @@ doc
     // name
     .font('main')
     .fontSize(24)
-    .fillColor("#808080")
+    .fillColor(color.grey)
     .text(cv.name, 80, 35, {
         align: 'left',
     })
@@ -354,7 +355,7 @@ cv.experience.jobs.forEach(job => {
         .mdtext(job.company, baseX)
     doc
         .fontSize(cg.textSize)
-        .fillColor("gray")
+        .fillColor(color.grey)
         .mdtext(job.timeline, baseX)
 
     const lines = job.position.split('|')
@@ -414,19 +415,33 @@ doc.vline(xseparator, startY, doc.y, color.yellow)
 
 // github
 {
-    let link = 'https://github.com/invider'
-    doc.fontSize(12)
-    let width = doc.widthOfString(link);
     let height = doc.currentLineHeight();
-
     let x = cg.pageWidth - 170
-    let y = cg.pageHeight - 60
+    let y = cg.pageHeight - 80
 
     doc
+        .fontSize(cg.titleTextSize)
+        .fillColor(color.grey)
+        .text('Links', x, y)
+
+    // home page
+    y += 22
+    let width = doc.widthOfString(cv.homePage);
+    doc
+        .fontSize(12)
         .fillColor(color.blue)
-        .text(link, x, y)
-        .underline(x, y, width, height, { color: "#0000FF" })
-        .link(x, y, width, height, 'https://github.com/invider')
+        .text(cv.homePage, x, y)
+        //.underline(x, y, width, height, { color: "#0000FF" })
+        .link(x, y, width, height, cv.homePage)
+
+    // github
+    y += 15
+    width = doc.widthOfString(cv.gitHub);
+    doc
+        .fillColor(color.blue)
+        .text(cv.gitHub, x, y)
+        //.underline(x, y, width, height, { color: "#0000FF" })
+        .link(x, y, width, height, cv.gitHub)
 }
 
 // finalize PDF file
