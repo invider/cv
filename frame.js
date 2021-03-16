@@ -306,12 +306,12 @@ doc
     // location & contacts
     .fontSize(cg.textSize)
     .fillColor("#808080")
-    .text(cv.location , 80, 80, {
+    .text(cv.location, 80, 68, {
         align: 'right',
     })
 
     // contacts
-    .text('  <' + cv.contacts + '>', 80, 93, {
+    .text('  <' + cv.contacts + '>', 80, 85, {
         align: 'right',
     })
 
