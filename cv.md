@@ -21,10 +21,10 @@ in Big Data, Social, and Mobile Entertainment areas.
 
 * Luxoft == Solution Architect == Jan 2018 - June 2019
 Led bootstrap, development, production deployment, and support of a big-data warehousing system.
-[HDFS, _Spark, Kafka, Tyk, NiFi, Cassandra, Scala, Java, JS, Kubernetes, Alibaba Cloud_]
+[HDFS, _Spark, Kafka, Tyk, NiFi, Cassandra, Scala, Java, JS, Python, Docker, Kubernetes, Terraform, Alibaba Cloud_]
 # 
 * IntroPro == Solution Architect,|Deputy Director of |Biz Dev Department,|Director of Academy == Oct 2011 - Jan 2018
-Designed and implemented multiple projects for the satellite TV industry:
+Designed and implemented multiple projects for the media industry:
 • Addressable ads monitoring system for satellite TV appliances;
 • NoSQL solution to store and analyze media stream metadata;
 • Prospective Set-Top Box chipset testing framework;
@@ -52,25 +52,25 @@ Development of websites, educational software, and a geodesic system.
 [_HTML/JavaScript, VBA, SQL, C++, AutoCAD_]
 #
 # Skills:
-* *Languages:* _Java, JavaScript, Scala, Go, Groovy, C, Python, bash_
+* *Languages:* _Java, JavaScript, Scala, Go, Groovy, C, Python_
 * *Frameworks and Technologies:* _Spring, Spring Boot, Hibernate, NodeJS, Express, Electron, Cordova, Play, Scalatra, Grails_ 
-* *Databases:* _Cassandra, Couchbase, MySQL, PostgreSQL_
+* *Databases:* _Cassandra, Couchbase, MongoDB, MySQL, PostgreSQL_
 * *Data Processing:* _Spark, Hadoop, HDFS, Kafka_
 * *Tools:* _git, mercurial, gradle, sbt, maven, ant, make, vim_ 
 * *Clouds:* _AWS, Alibaba Cloud_
-* *OS/Containers:* _Linux, Docker, Kubernetes_
+* *OS/Containers:* _Linux, FreeBSD, MacOS, Docker, Kubernetes_
 
 * A *UNIX* guru, has been using various Linux/FreeBSD/macOS versions for the last 20 years, has a deep understanding of UNIX structure, toolset, and live operations.
 
 * Started with *Containers* back in 2007, hands-on experience in running Docker for development, testing, and production. Experience in the deployment of containerized applications in modern clouds.
 
-* Rich *Fullstack* experience with a wide variety of platforms - backend services, external web services integration, big data map-reduce processing, web apps, desktop apps, mobile apps, embedded systems, development tooling.
+* Rich *Fullstack* experience with a wide variety of platforms - backend services, external web services integration, big data map-reduce processing, web apps, desktop apps, mobile apps, embedded systems, development and test tooling...
 
 * Experience with *high-load*, scalable, and distributed systems. Understanding of *Big/Fast Data* and *NoSQL* technologies and use-cases for their successful application.
 
 * _*Fluent English*_
 
-* _Interested in music, education, game development and gamification._
+* _Interested in education, gamification, music, hi-tech marketing and the history of technology._
 
 # Education:
 Master's Degree in Physics, Physics and Mathematics Faculty,
