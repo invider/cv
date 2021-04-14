@@ -2,7 +2,7 @@
 
 Title:    Solution Architect
 Location: Kiev, Ukraine
-Contacts: i@invadium.com
+Contacts: igor@ikhotin.com
 GitHub:   https://github.com/invider
 HomePage: http://ikhotin.com
 
@@ -64,13 +64,13 @@ Development of websites, educational software, and a geodesic system.
 
 * Started with *Containers* back in 2007, hands-on experience in running Docker for development, testing, and production. Experience in the deployment of containerized applications in modern clouds.
 
-* Rich *Fullstack* experience with a wide variety of platforms - backend services, external web services integration, big data map-reduce processing, web apps, desktop apps, mobile apps, embedded systems, development and test tooling...
+* Rich *Fullstack* experience with a wide variety of platforms - backend services, external web services integration, big data map-reduce processing, web apps, desktop apps, mobile apps, embedded systems, development, and test tooling...
 
 * Experience with *high-load*, scalable, and distributed systems. Understanding of *Big/Fast Data* and *NoSQL* technologies and use-cases for their successful application.
 
 * _*Fluent English*_
 
-* _Interested in education, gamification, music, hi-tech marketing and the history of technology._
+* _Interested in education, gamification, music, hi-tech marketing, and the history of technology._
 
 # Education:
 Master's Degree in Physics, Physics and Mathematics Faculty,
