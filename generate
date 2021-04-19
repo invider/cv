@@ -1,3 +1,9 @@
 #!/bin/sh
 node frame.js
 mv cv.pdf 'Igor_Khotin.Solution_Architect.CV.pdf'
+./copy2ikhotin
+
+node frame.js --extended
+mv cv.pdf 'Igor_Khotin.Solution_Architect.CV.pdf'
+./copy2ikhotin.ext
+

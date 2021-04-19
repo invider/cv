@@ -27,6 +27,8 @@
 > Apache Camel
 > Spring Cloud
 > Spring Integration
+> Quarkus
+> Micronaut
 > RabbitMQ
 > JMS
 > Redis

@@ -3,13 +3,22 @@
 const fs = require('fs');
 let PDFDocument = require("pdfkit");
 
-let color = {
+const env = {
+    extended: false,
+}
+
+const color = {
     blue:   "#233C75",
     red:    "#e02010",
-    orange: "#c55614",
+    //orange: "#c55614",
+    orange: "#cf8621",
     yellow: "#f9e337",
     grey:   "#808080",
 }
+
+process.argv.forEach( (e, i) => {
+    if (e === '--extended') env.extended = true
+})
 
 let trim = function(txt, shift) {
     if (shift) {
@@ -277,7 +286,7 @@ doc.on('pageAdded', () => {
 doc.image('img/profile.png', 25, 20, {
     width: 40,
     height: 75,
-    })
+})
 
 /*
 // logo
@@ -298,22 +307,46 @@ doc
 
     // title
     .fontSize(16)
-    .fillColor("orange")
+    .fillColor(color.orange)
     .text(cv.title, 80, 70, {
         align: 'left',
     })
 
-    // location & contacts
-    .fontSize(cg.textSize)
-    .fillColor("#808080")
-    .text(cv.location, 80, 68, {
-        align: 'right',
-    })
 
-    // contacts
-    .text('  <' + cv.contacts + '>', 80, 85, {
-        align: 'right',
-    })
+// location & contacts
+if (env.extended) {
+    // with phone
+    doc
+        .fontSize(cg.textSize)
+        .fillColor("#808080")
+        .text(cv.location, 80, 60, {
+            align: 'right',
+        })
+
+        // contacts
+        .text('  <' + cv.contacts + '>', 80, 75, {
+            align: 'right',
+        })
+
+        // phone
+        .text(cv.phone, 80, 90, {
+            align: 'right',
+        })
+} else {
+    doc
+        // no phone
+        .fontSize(cg.textSize)
+        .fillColor("#808080")
+        .text(cv.location, 80, 68, {
+            align: 'right',
+        })
+
+        // contacts
+        .text('  <' + cv.contacts + '>', 80, 85, {
+            align: 'right',
+        })
+}
+
 
 // summary
 /*
@@ -362,7 +395,7 @@ cv.experience.jobs.forEach(job => {
     lines.forEach(line => {
         doc
             .fontSize(cg.textSize+2)
-            .fillColor("orange")
+            .fillColor(color.orange)
             .mdtext(line, baseX)
     })
 

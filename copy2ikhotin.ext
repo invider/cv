@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cp ./Igor_Khotin.Solution_Architect.CV.pdf ../ikhotin.com/static/data/ext/
+

@@ -3,6 +3,7 @@
 Title:    Solution Architect
 Location: Kiev, Ukraine
 Contacts: igor@ikhotin.com
+Phone:    +380 97 9009949
 GitHub:   https://github.com/invider
 HomePage: http://ikhotin.com
 
@@ -58,7 +59,7 @@ Development of websites, educational software, and a geodesic system.
 * *Data Processing:* _Spark, Hadoop, HDFS, Kafka_
 * *Tools:* _git, mercurial, gradle, sbt, maven, ant, make, vim_ 
 * *Clouds:* _AWS, Alibaba Cloud_
-* *OS/Containers:* _Linux, FreeBSD, MacOS, Docker, Kubernetes_
+* *OS/Containers:* _Linux, FreeBSD, macOS, Docker, Kubernetes_
 
 * A *UNIX* guru, has been using various Linux/FreeBSD/macOS versions for the last 20 years, has a deep understanding of UNIX structure, toolset, and live operations.
 
