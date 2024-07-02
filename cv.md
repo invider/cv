@@ -1,25 +1,31 @@
 === Igor Khotin === 
 
-Title:    Solution Architect
-Location: Kiev, Ukraine
-Contacts: igor@ikhotin.com
+Title:    Solutions Architect
+Location: Kyiv, Ukraine
+Contacts: khotin@gmx.com
 Phone:    +380 97 9009949
 GitHub:   https://github.com/invider
 HomePage: http://ikhotin.com
 
 # Summary:
-• 20+ years of experience in software development, a wide area of expertise
+• 24 years of experience in software development, a wide area of expertise
 • Hands-on experience with modern enterprise and cloud infrastructure
 • Full lifecycle - leading projects from a concept to release and production support
 • Good understanding of software development principles, tools, pipelines and processes
 • Business Development skills - marketing, pre-sale activities, proposals, tech interviews
 • Speaker at multiple conferences - _NAB Show, JEE Conf, JavaDay, Agile Base Camp, IT Jam_...
+
 # Experience:
-* Freelance Consultant == == July 2019 - Now
+#
+* DataArt == Solutions Architect == June 2021 - Now
+Led design of multiple cloud-based projects.
+[_AWS, ECS, Fargate, Linux, Docker, Cognito, AWS Gateway, SNS, SQS, DynamoDB, ElastiCache, PostgreSQL, Java, JavaScript, gradle, GitHub Actions, BitBucket Actions, AWS Build/Deploy_]
+#
+* Freelance Consultant == == July 2019 - June 2021
 Participated as a freelance developer/consultant in multiple projects
 in Big Data, Social, and Mobile Entertainment areas.
 [_JavaScript, Node.js, Electron, Cordova, Go, Python, Docker_]
-
+#
 * Luxoft == Solution Architect == Jan 2018 - June 2019
 Led bootstrap, development, production deployment, and support of a big-data warehousing system.
 [HDFS, _Spark, Kafka, Tyk, NiFi, Cassandra, Scala, Java, JS, Python, Docker, Kubernetes, Terraform, Alibaba Cloud_]
@@ -38,11 +44,15 @@ Led an internal education program to improve technical and soft skills.
 #
 * MonteCristo Multimedia == Enterprise Architect == 2007 - 2010
 Designed, bootstrapped, and led the development, production deployment, and support of a high-load backend system for a Massively Multiplayer Online Game.
+
+
 [_Java, Groovy, Spring, Hibernate, JBoss, PostgreSQL, FreeBSD, containers/jails_]
 #
 * UnitedThinkers == Senior Java/SQL Engineer == 2005-2006 
 CRM and billing system development
+
 [_Java, MS SQL_]
+
 #
 * IDM == Software Developer == 2003-2004
 ERP System development

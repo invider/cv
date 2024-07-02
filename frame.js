@@ -14,6 +14,8 @@ const color = {
     orange: "#cf8621",
     yellow: "#f9e337",
     grey:   "#808080",
+
+    cyan:   "#00ffff",
 }
 
 process.argv.forEach( (e, i) => {
@@ -138,6 +140,7 @@ cvl.forEach(l => {
 
 // create a document
 let doc = new PDFDocument({
+    bufferPages: true,
     layout: 'portrait',
     //layout: 'landscape',
     //size: [180, 252],
@@ -158,6 +161,31 @@ doc.registerFont('bold', 'font/CalibriB.ttf')
 doc.registerFont('italic', 'font/CalibriI.ttf')
 //doc.registerFont('main', 'font/neuropol.ttf')
 //doc.registerFont('main', 'font/november.ttf')
+
+doc.state = {
+    page: 0,
+}
+doc.on('pageAdded', () => {
+    const startY = doc.y
+    const prevPage = doc.state.page
+    doc.state.page ++
+    doc.state.pageJump = true
+    const nextPage = doc.state.page
+    
+    if (doc.state.section === 'experience') {
+        const bottomY = 808
+        const vspan = bottomY - doc.state.baseY
+
+        doc.switchToPage(prevPage)
+        if (vspan > 10) {
+            doc.vline(doc.state.xseparator - 40, doc.state.baseY, bottomY, color.cyan)
+        }
+        doc.switchToPage(nextPage)
+
+        doc.y = startY
+        doc.state.baseY = doc.y
+    }
+})
 
 // extend doc
 let isSpecial = function(ch) {
@@ -359,13 +387,16 @@ doc
     .fontSize(cg.textSize + 2)
     .fillColor('#505050')
     .text('', 80, 110)
+doc.state.section = 'summary'
 cv.summary.ls.forEach(l => doc.mdtext(l + '\n', 80))
 
 let baseX = cg.baseX
 let xseparator = cg.titleWidth
+doc.state.xseparator = xseparator
 let xspace = 10
 
 // experience
+doc.state.section = 'experience'
 doc
     .fontSize(cg.titleTextSize)
     .fillColor(color.blue)
@@ -379,8 +410,11 @@ doc
     .shiftDown(cg.subSectionIdent)
 
 let curY = doc.y
+
 cv.experience.jobs.forEach(job => {
-    let baseY = doc.y
+    // a job entry
+    doc.state.pageJump = false
+    doc.state.baseY = doc.y
 
     doc
         .fontSize(cg.textSize+2)
@@ -401,22 +435,25 @@ cv.experience.jobs.forEach(job => {
 
     let maxY = doc.y
 
-    doc.y = baseY
+    // second column
+    doc.y = doc.state.baseY
     doc
         .fontSize(cg.textSize)
         .fillColor("black")
 
     job.ls.forEach(l => doc.mdtext(l + '\n', xseparator + xspace))
 
-    if (doc.y < maxY) doc.y = maxY
-    doc.vline(xseparator, baseY, doc.y-5, color.blue)
+    if (doc.y < maxY && !doc.state.pageJump) doc.y = maxY
+
+    // separator
+    doc.vline(xseparator, doc.state.baseY, doc.y-5, color.blue)
 
     doc.shiftDown(cg.jobIdent)
-
 })
 //doc.vline(xseparator, startY, doc.y, color.blue)
 
 // skills
+doc.state.section = 'skills'
 doc.shiftDown(cg.sectionIdent)
 doc
     .fontSize(cg.titleTextSize)
@@ -432,6 +469,7 @@ cv.skills.ls.forEach(l => doc.mdtext(l + '\n', xseparator + xspace))
 doc.vline(xseparator, startY, doc.y, color.red)
 
 // education
+doc.state.section = 'education'
 doc
     .fontSize(cg.titleTextSize)
     .fillColor(color.blue)
@@ -478,5 +516,6 @@ doc.vline(xseparator, startY, doc.y, color.yellow)
 }
 
 // finalize PDF file
+doc.flushPages()
 doc.end()
 
