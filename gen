@@ -1,4 +1,5 @@
 #!/bin/sh
 
 node frame.js
+mv cv.pdf "CV - Igor Khotin - Solutions Architect.2024.pdf"
 

@@ -11,8 +11,10 @@ HomePage: http://ikhotin.com
 • 24 years of experience in software development, a wide area of expertise
 • Hands-on experience with modern enterprise and cloud infrastructure
 • Full lifecycle - leading projects from a concept to release and production support
-• Good understanding of software development principles, tools, pipelines and processes
-• Business Development skills - marketing, pre-sale activities, proposals, tech interviews
+• Good understanding of software development principles, tools, pipelines, and processes
+• Business Development skills - marketing, pre-sale activities, proposals, tech interviews, training
+• Started to use containers in production back in 2007 before anybody knew about the upcoming revolution 
+• Already used highly-distributed NoSQL solutions 15 years ago, before it became mainstream
 • Speaker at multiple conferences - _NAB Show, JEE Conf, JavaDay, Agile Base Camp, IT Jam_...
 
 # Experience:
@@ -65,24 +67,23 @@ Development of websites, educational software, and a geodesic system.
 # Skills:
 * *Languages:* _Java, JavaScript, Scala, Go, Groovy, C, Python_
 * *Frameworks and Technologies:* _Spring, Spring Boot, Hibernate, NodeJS, Express, Electron, Cordova, Play, Scalatra, Grails_ 
-* *Databases:* _Cassandra, Couchbase, MongoDB, MySQL, PostgreSQL_
-* *Data Processing:* _Spark, Hadoop, HDFS, Kafka_
+* *Databases:* _Cassandra, DynamoDB, Couchbase, MongoDB, MySQL, PostgreSQL_
+* *Data Processing:* _Spark, Hadoop, HDFS, Kafka, SQS_
 * *Tools:* _git, mercurial, gradle, sbt, maven, ant, make, vim_ 
 * *Clouds:* _AWS, Alibaba Cloud_
-* *OS/Containers:* _Linux, FreeBSD, macOS, Docker, Kubernetes_
+* *OS/Containers:* _Linux, FreeBSD, macOS, Docker, Kubernetes, ECS, Fargate_
 
-* A *UNIX* guru, has been using various Linux/FreeBSD/macOS versions for the last 20 years, has a deep understanding of UNIX structure, toolset, and live operations.
+* A *UNIX* guru, has been using various Linux/FreeBSD/macOS versions for the last 20 years, and deeply understands UNIX structure, toolset, and live operations.
 
 * Started with *Containers* back in 2007, hands-on experience in running Docker for development, testing, and production. Experience in the deployment of containerized applications in modern clouds.
 
-* Rich *Fullstack* experience with a wide variety of platforms - backend services, external web services integration, big data map-reduce processing, web apps, desktop apps, mobile apps, embedded systems, development, and test tooling...
+* Rich *Fullstack* experience with a wide variety of platforms - backend microservices, external web services integration, big data map-reduce processing and warehousing, web apps, desktop apps, dev tools, mobile apps, embedded systems...
 
-* Experience with *high-load*, scalable, and distributed systems. Understanding of *Big/Fast Data* and *NoSQL* technologies and use-cases for their successful application.
+* Experience with *high-load*, scalable, and distributed systems. Understanding of *Big/Fast Data* and *NoSQL* technologies and use cases for their successful application.
 
 * _*Fluent English*_
 
-* _Interested in education, gamification, music, hi-tech marketing, and the history of technology._
-
+* _Interested in education, gamification, hi-tech marketing, and the history of technology._
 # Education:
 Master's Degree in Physics, Physics and Mathematics Faculty,
 National Technical University of Ukraine "Kyiv Polytechnic Institute"
