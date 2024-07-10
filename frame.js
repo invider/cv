@@ -306,9 +306,11 @@ doc.outerFrame = function() {
 
 // commence doc generation
 doc.outerFrame()
+/*
 doc.on('pageAdded', () => {
     doc.outerFrame()
 })
+*/
 
 // photo
 doc.image('img/profile.png', 25, 20, {
